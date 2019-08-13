@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package>
+    <name>bb_eav</name>
+    <version>1.0.0</version>
+    <stability>stable</stability>
+    <license uri="http://opensource.org/licenses/osl-3.0.php">Open Software License (OSL 3.0)</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Performance fix for EAV module</summary>
+    <description>This module is a performance fix for all community and enterprise versions before Community 1.9 edition. Since I worked for a store having a very complex products (with a large numbers of attributes and large scale of values), I discovered that Magento has a performance bottleneck on product listing page and product page. </description>
+    <notes>fix performance issue on catalog</notes>
+    <authors><author><name>George Babarus</name><user>MAG000308246</user><email>george.babarus@gmail.com</email></author></authors>
+    <date>2014-11-17</date>
+    <time>12:30:29</time>
+    <contents><target name="mage"><dir name="app"><dir name="code"><dir name="community"><dir name="Bb"><dir name="Eav"><dir name="Model"><dir name="Entity"><dir name="Attribute"><dir name="Source"><file name="Table.php" hash="820dc510f9ce8b79201aa316e603751a"/></dir></dir></dir></dir><dir name="etc"><file name="config.xml" hash="e33df9c1035f070630c9226644d3db14"/></dir></dir></dir></dir></dir><dir name="etc"><dir name="modules"><file name="Bb_Eav.xml" hash="5bde51bb75704932a26bc747184cdfc3"/></dir></dir></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.3.1</min><max>5.6.0</max></php></required></dependencies>
+</package>
