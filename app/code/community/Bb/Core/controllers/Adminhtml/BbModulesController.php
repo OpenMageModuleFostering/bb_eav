@@ -15,24 +15,39 @@
 class Bb_Core_Adminhtml_BbModulesController extends Mage_Adminhtml_Controller_Action
 {
 
+    /**
+     * put some init stuff here
+     */
     public function init()
     {
-        parent::init();
 
-        $this->_setActiveMenu('bb');
 
     }
 
 
     /**
-     * help user to use id
+     * help user to use bb products
      */
     public function productsAction()
     {
         $this->loadLayout();
+        $this->_setActiveMenu('bb_products');
         $this->renderLayout();
     }
 
+
+    /**
+     * help user to use bb products
+     */
+    public function helpAction()
+    {
+        $this->loadLayout();
+        $this->_setActiveMenu('bb_products');
+
+        $url = sprintf('http://docs.babarus.ro/help-documents/products/%s/help.html',$this->getRequest()->getParam('module'));
+        $this->getLayout()->getBlock('bb_help')->setData('url', $url);
+        $this->renderLayout();
+    }
 
     protected function _isAllowed()
     {

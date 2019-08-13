@@ -1,18 +1,18 @@
 <?xml version="1.0"?>
 <package>
     <name>bb_eav</name>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
     <stability>stable</stability>
-    <license uri="http://opensource.org/licenses/osl-3.0.php">Open Software License (OSL 3.0)</license>
+    <license>Open Software License (OSL 3.0)</license>
     <channel>community</channel>
     <extends/>
     <summary>Performance fix for EAV module</summary>
     <description>This module is a performance fix for all community and enterprise versions before Community 1.9 edition. Since I worked for a store having a very complex products (with a large numbers of attributes and large scale of values), I discovered that Magento has a performance bottleneck on product listing page and product page. </description>
     <notes>added dependency module</notes>
     <authors><author><name>George Babarus</name><user>MAG000308246</user><email>george.babarus@gmail.com</email></author></authors>
-    <date>2014-11-17</date>
-    <time>12:55:30</time>
-    <contents><target name="mage"><dir name="app"><dir name="code"><dir name="community"><dir name="Bb"><dir name="Eav"><dir name="Model"><dir name="Entity"><dir name="Attribute"><dir name="Source"><file name="Table.php" hash="820dc510f9ce8b79201aa316e603751a"/></dir></dir></dir></dir><dir name="etc"><file name="config.xml" hash="e33df9c1035f070630c9226644d3db14"/></dir></dir><dir name="Core"><dir name="Helper"><file name="Data.php" hash="7faefd6e95218125d6621d168279961f"/></dir><dir name="controllers"><dir name="Adminhtml"><file name="BbModulesController.php" hash="02c28acf9adb3205eccdb193fddf2a88"/></dir></dir><dir name="etc"><file name="adminhtml.xml" hash="7534028c5bb1f226a001ab63324103ef"/><file name="config.xml" hash="30d6037810e87f55c8843bcbb3393ea6"/></dir></dir></dir></dir></dir><dir name="etc"><dir name="modules"><file name="Bb_Eav.xml" hash="5bde51bb75704932a26bc747184cdfc3"/><file name="Bb_Core.xml" hash="321e49727c3d620d9e4e681f41e1c830"/></dir></dir></dir></target></contents>
+    <date>2015-02-26</date>
+    <time>13:59:52</time>
+    <contents><target name="mage"><dir name="app"><dir name="code"><dir name="community"><dir name="Bb"><dir name="Core"><dir name="Helper"><file name="Data.php" hash="c2daa6289925ca2f34dfd979c22a6e32"/></dir><dir name="controllers"><dir name="Adminhtml"><file name="BbModulesController.php" hash="ac384fee9e7892fc611221622c333716"/></dir></dir><dir name="etc"><file name="adminhtml.xml" hash="d65e308569fd4ff8efd88a49f3d8b953"/><file name="config.xml" hash="c882a77220f67bf8ebe3ff7c222b88f9"/></dir></dir><dir name="Eav"><dir name="Model"><dir name="Entity"><dir name="Attribute"><dir name="Source"><file name="Table.php" hash="516ebf9bfe30e3626a476f0c00251443"/></dir></dir></dir></dir><dir name="etc"><file name="adminhtml.xml" hash="6f16e316fb07c32feaaaec370a853f02"/><file name="adminhtml.xml~" hash="3847e4ec48f297ab569bbf652191c166"/><file name="config.xml" hash="b3b4f37d59853b64cef31837bea1f8bb"/></dir></dir></dir></dir></dir><dir name="design"><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="layout"><file name="bb_core.xml" hash="ceb184ef1266b85464f65c5f9460dba8"/></dir><dir name="template"><dir name="bb_products"><file name="help.phtml" hash="ddf223964c3f662c1c352068f050857e"/></dir></dir></dir></dir></dir></dir><dir name="etc"><dir name="modules"><file name="Bb_Core.xml" hash="f8770daf502376cca878b68672cbc12b"/><file name="Bb_Eav.xml" hash="506f328884b7d106c24174de2d1157c2"/></dir></dir></dir></target></contents>
     <compatible/>
-    <dependencies><required><php><min>5.3.1</min><max>5.6.0</max></php></required></dependencies>
+    <dependencies><required><php><min>5.2.0</min><max>5.6.0</max></php></required></dependencies>
 </package>
