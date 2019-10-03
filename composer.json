@@ -1,16 +1,19 @@
 {
-    "name": "OpenMageModuleFostering/bb_eav",
+    "name": "OpenMageModuleFostering\/bb_eav",
     "type": "magento-module",
     "license": "Open-Software-License-(OSL-3.0)",
     "homepage": "",
     "description": "Performance fix for EAV module",
     "authors": [
-    {
-        "name": "George Babarus",
-        "email": "george.babarus@gmail.com"
-    }
-],
+        {
+            "name": "George Babarus",
+            "email": "george.babarus@gmail.com"
+        }
+    ],
     "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+        "magento-hackathon\/magento-composer-installer": "*"
+    },
+    "keywords": [
+        "openmage-module"
+    ]
 }
